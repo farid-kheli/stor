@@ -1,41 +1,107 @@
 .category .banner{
     display: flex;
     justify-content: center;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
+
+.category .banner img {
+    border-radius: 20px;
+    filter: brightness(0.9);
+    transition: all 0.3s ease;
+}
+
+.category .banner img:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+}
+
 .category .category_Shop{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
 }
+
 .category .category_Shop .line1{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    align-items: center;
+    width: 90%;
+    max-width: 1400px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 15px 25px;
+    margin: 20px 0;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08);
 }
+
 .category .category_Shop .line1 button{
-    border: 1px solid black;
-    padding-left: 20px;
-    padding-right: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
+    color: #1d1d1f;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.category .category_Shop .line1 button:hover {
+    background: #f5f5f7;
+    border-color: #007aff;
+}
+
 .category .category_Shop .line1 p {
     display: flex;
     gap: 20px;
-    color: gray;
+    color: #6e6e73;
+    font-weight: 400;
+    font-size: 0.95rem;
 }
+
 .category .category_Shop .line1 p span{
-    color: #000000;
+    color: #1d1d1f;
+    font-weight: 600;
 }
+
 .category .category_items{
-    margin-top: 20px;
+    margin-top: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
     column-gap: 30px;
-    
+    padding: 20px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1400px) {
+    .category .category_items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .category .category_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .category .category_items {
+        grid-template-columns: 1fr;
+    }
 }

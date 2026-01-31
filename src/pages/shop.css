@@ -1,31 +1,43 @@
 .shop{
     padding: 20px;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
 .first-ads{
-    width: 1000px;
-    height: 300px;
+    width: 100%;
+    min-height: 350px;
 }
+
 .secendparte{
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 30px;
+    flex: 1;
+    min-width: 400px;
 }
+
 .firstparte{
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 30px;
+    flex: 2;
+    min-width: 600px;
 }
+
 .secend-ads{
-    width: 700px;
-    height: 200px;
+    width: 100%;
+    min-height: 240px;
 }
+
 .therd-ads{
-    width: 700px;
-    height: 250px;
+    width: 100%;
+    min-height: 240px;
 }
+
 .forthe-ads{
-    width: 1000px;
-    height: 240px;
+    width: 100%;
+    min-height: 280px;
 }

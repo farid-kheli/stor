@@ -22,8 +22,10 @@ const Category = (props) => {
         </div>
         <div className="category_items">
           {all_product.map((item, i) => {
-            if (props.category == item.category)
+            if (props.category === item.category) {
               return <Item key={i} id={item.id} titel={item.name} imag={item.image} new_price={item.new_price} old_price={item.old_price} />
+            }
+            return null;
           })}
         </div>
       </div>

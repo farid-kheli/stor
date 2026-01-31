@@ -22,7 +22,7 @@ const CardItem = () => {
                 <tbody>
                     {all_product.map((e) => {
                         if (CardItems[e.id] > 0) {
-                            return <tr>
+                            return <tr key={e.id}>
                                 <th><img className='product_Cart_item' src={e.image} alt="" /></th>
                                 <th>{e.name}</th>
                                 <th>${e.new_price}</th>
@@ -31,6 +31,7 @@ const CardItem = () => {
                                 <th><img onClick={()=>{DileteFromcard(e.id)}} src={remove_icon} alt="" /></th>
                             </tr>
                         }
+                        return null;
                     }
 
                     )}

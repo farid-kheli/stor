@@ -1,8 +1,6 @@
 import React from 'react'
 import './popular.css'
 import Item from '../item/item'
-import img from '../asset/product_3.png'
-import img2 from '../asset/product_1.png'
 import data_product from '../asset/data'
 
 //<Item key={1} id={1} titel={'Titel'} imag={img} new_price={25} old_price={30} />

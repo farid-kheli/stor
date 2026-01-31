@@ -25,8 +25,8 @@ const Breadcrum = (props) => {
                         </div>
                         <div class="col-6">
                             <div class="breadcrumb">
-                                <span><a href="#">Home</a></span>
-                                <span><a href="#">Product</a></span>
+                                <span><a href="/">Home</a></span>
+                                <span><a href="/product">Product</a></span>
                                 <span class="active">T-shirt</span>
                             </div>
 
@@ -43,8 +43,8 @@ const Breadcrum = (props) => {
                                     <span class="review">(47 Review)</span>
                                 </div>
                                 <div class="product-price">
-                                    <span class="offer-price">$99.00</span>
-                                    <span class="sale-price">$129.00</span>
+                                    <span class="offer-price">${product.new_price}</span>
+                                    <span class="sale-price">${product.old_price}</span>
                                 </div>
 
                                 <div class="product-details">

@@ -1,77 +1,151 @@
 .footer{
-    background: #2b552b;
-    color:  white;
+    background: rgba(78, 78, 78, 0.9);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: #1d1d1f;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin-top: 30px;
+    gap: 35px;
+    margin-top: 60px;
+    padding: 50px 20px 30px 20px;
+    box-shadow: 0 -4px 20px 0 rgba(0, 0, 0, 0.05);
 }
+
 .footer .footer_first{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 70%;
+    gap: 40px;
 }
+
+.footer .footer_first img {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
 .footer .footer_first .footer_main{
     display: flex;
     width: 100%;
-    gap: 8px;
+    gap: 10px;
 }
+
 .footer .footer_first .news_email input{
-    border: 3px solid #ccc;
-    padding: 10px;
-    border-radius: 30px;
-    width: 300px;
-    transition: .5ms;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px 20px;
+    border-radius: 20px;
+    width: 320px;
+    transition: all 0.3s ease;
     box-sizing: border-box;
     outline: none;
-    
+    color: #1d1d1f;
+    font-size: 0.95rem;
 }
+
+.footer .footer_first .news_email input::placeholder {
+    color: #86868b;
+}
+
 .footer .footer_first .news_email input:focus{
-    border: 3px solid goldenrod;
-    
+    border: 1px solid #007aff;
+    box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.1);
 }
+
 .footer .news_email{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
+}
+
+.footer .news_email h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1d1d1f;
 }
 
 .footer .footer_first .news_email button{
-    background: black;
+    background: #007aff;
     color: white;
     border: none;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 12px 30px;
     border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
 }
+
+.footer .footer_first .news_email button:hover {
+    background: #0051d5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 122, 255, 0.4);
+}
+
 .footer .copyright hr{
     width: 50%;
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
 }
+
 .footer .copyright{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }
+
+.footer .copyright h4 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #86868b;
+}
+
 .footer ul{
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.footer ul li {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    color: #6e6e73;
+}
+
+.footer ul li:hover {
+    color: #007aff;
+}
+
 .footer img{
     height: 100px;
 }
+
 .footer .contact_us img{
-    height: 40px;
+    height: 45px;
+    transition: all 0.3s ease;
+    opacity: 0.7;
 }
+
+.footer .contact_us img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
 .footer .contact_us a{
     text-decoration: none;
 }
+
 .footer .contact_us{
     display: flex;
     gap: 50px;
